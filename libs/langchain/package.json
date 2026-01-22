@@ -1,0 +1,28 @@
+{
+  "name": "@rag-stackoverflow-js/langchain",
+  "version": "1.0.0",
+  "description": "RAG implementation with LangChain and Google Generative AI",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./prepare": "./prepare_document.js"
+  },
+  "scripts": {
+    "prepare_document": "dotenvx run -- node prepare_document.js"
+  },
+  "keywords": ["langchain", "rag", "ai"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.51.4",
+    "@langchain/community": "^1.1.5",
+    "@langchain/core": "^1.1.16",
+    "@langchain/google-genai": "^2.1.12",
+    "@langchain/langgraph": "^1.1.1",
+    "@langchain/textsplitters": "^1.0.1",
+    "cheerio": "^1.1.2",
+    "chromadb": "^2.4.6",
+    "langchain": "^1.2.12"
+  }
+}

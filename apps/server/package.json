@@ -1,0 +1,20 @@
+{
+  "name": "@rag-stackoverflow-js/server",
+  "version": "1.0.0",
+  "description": "RAG API Server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "dotenvx run -- node index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.51.4",
+    "@rag-stackoverflow-js/langchain": "workspace:*",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}

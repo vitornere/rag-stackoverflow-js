@@ -1,5 +1,13 @@
 {
   "name": "rag-stackoverflow-js",
   "packageManager": "pnpm@10.28.1",
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "dev:web": "pnpm --filter @rag-stackoverflow-js/chat dev",
+    "dev:server": "dotenvx run -- pnpm --filter @rag-stackoverflow-js/server start",
+    "prepare:langchain": "dotenvx run -- node libs/langchain/prepare_document.js"
+  },
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.51.4"
+  }
 }
